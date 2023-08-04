@@ -1,0 +1,18 @@
+# Project information
+site_name: Niflheim Quickstart
+site_url: https://asm-dtu.gitlab.io/niflheim-quickstart
+
+# Theme settings
+theme:
+  name: material
+
+# Navigation menu
+nav:
+  - Home: index.md
+  - Quickstart: quickstart.md
+  # - Useful Linux Commands: linux.md
+  # - More Resources: resources.md
+
+# Plugins
+plugins:
+  - search
