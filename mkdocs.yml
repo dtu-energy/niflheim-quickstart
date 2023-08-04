@@ -1,7 +1,7 @@
 # Project information
 site_name: Niflheim Quickstart
 site_url: https://asm-dtu.gitlab.io/niflheim-quickstart
-docs_dir: .
+docs_dir: docs
 
 # Theme settings
 theme:
