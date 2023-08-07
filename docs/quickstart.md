@@ -4,23 +4,21 @@ This page will guide you through the basic steps to access and use the hpc resou
 
 ## Prerequisites
 
-Before you start, you need to have:
+We assume that you have an account on Niflheim. Before you start, you need to have:
 
-- An account on the hpc resource. Contact the administrator if you don't have one.
-- A SSH client on your local machine. You can use PuTTY for Windows or Terminal for Mac/Linux.
-- A text editor on your local machine. You can use Notepad++ for Windows or Vim for Mac/Linux.
+- A SSH client on your local machine. You can use PuTTY or MobaXterm for Windows or Terminal for Mac/Linux.
 
 ## Step 1: Log in to Niflheim
 
-To log in to the hpc resource, open your SSH client and enter the following command:
+To log in to Niflheim, open your SSH client and enter the following command:
 
 ```bash
-ssh username@hpc.example.com
+ssh username@surt.fysik.dtu.dk
 ```
 
-Replace `username` with your actual username and hpc.example.com with the actual hostname of the hpc resource. You will be prompted to enter your password. After you enter it, you should see a welcome message and a shell prompt.
+Replace `username` with your actual username and `surt` with the hostname of the login node you want to connect to (`thul`, `slid`, `sylg`, `svol` or `surt`). You will be prompted to enter your password. After you enter it, you should see a welcome message and a shell prompt.
 
-## Step 2: Transfer files to/from the hpc resource
+## Step 2: Transfer files to/from Niflheim
 
 To transfer files between your local machine and the hpc resource, you can use a tool called SCP (Secure Copy). SCP uses SSH to securely copy files over the network. To use SCP, open another SSH client window and enter a command like this:
 
