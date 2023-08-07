@@ -2,7 +2,7 @@
 
 This website as a gentle introduction for new users of Niflheim. You will learn how to access the resource, submit jobs, monitor your usage, and more. All information can also be found here: <https://wiki.fysik.dtu.dk/Niflheim_users/>
 
-## Description of Niflheim
+## What is an HPC cluster?
 
 Niflheim is an HPC cluster. It is a collection of many separate servers (computers), called nodes, which are connected via a fast interconnect. There are different types of nodes for different types of tasks, such as login nodes and compute nodes.
 
@@ -11,6 +11,8 @@ Login nodes are the nodes that you use to access the cluster. They are the gatew
 Compute nodes are the nodes that actually run your jobs. Compute nodes are organized into partitions, which are groups of nodes with similar characteristics and policies. For example, there may be partitions for different types of CPUs or GPUs, different amounts of memory or storage, different time limits or priorities, etc. You can specify which partition you want to use when you submit your job with the `sbatch` command.
 
 Each compute node partition has a corresponding login node with the same CPU architechture. See details [here](https://wiki.fysik.dtu.dk/Niflheim_users/Niflheim_Getting_Started/#login-to-niflheim).
+
+[TOC]
 
 ## Table of Contents
 
