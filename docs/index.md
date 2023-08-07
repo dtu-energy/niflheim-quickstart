@@ -1,6 +1,6 @@
 # Welcome to Niflheim Quickstart
 
-This website as a gentle introduction for new users of Niflheim. You will learn how to access the resource, submit jobs, monitor your usage, and more. All information can also be found here: https://wiki.fysik.dtu.dk/Niflheim_users/
+This website as a gentle introduction for new users of Niflheim. You will learn how to access the resource, submit jobs, monitor your usage, and more. All information can also be found here: <https://wiki.fysik.dtu.dk/Niflheim_users/>
 
 ## Description of Niflheim
 

@@ -11,9 +11,15 @@ theme:
 nav:
   - Home: index.md
   - Quickstart: quickstart.md
-  # - Useful Linux Commands: linux.md
+  - Useful Slurm Commands: slurm.md
+  - Useful Linux Commands: linux.md
   # - More Resources: resources.md
 
 # Plugins
 plugins:
   - search
+  
+# Extension for table of contents
+markdown_extensions:
+  - toc:
+      permalink: "#"
