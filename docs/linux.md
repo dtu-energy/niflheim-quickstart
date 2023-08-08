@@ -1,4 +1,4 @@
-# Most Useful Linux Commands
+# Useful Linux Commands
 
 This page will introduce you to some of the most useful Linux commands that you can use on the hpc resource. Linux commands are case-sensitive and follow a general syntax of:
 

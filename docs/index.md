@@ -12,12 +12,15 @@ Compute nodes are the nodes that actually run your jobs. Compute nodes are organ
 
 Each compute node partition has a corresponding login node with the same CPU architechture. See details [here](https://wiki.fysik.dtu.dk/Niflheim_users/Niflheim_Getting_Started/#login-to-niflheim).
 
-[TOC]
+## Some rules on Niflheim
+
+- Don't run real calculations on the login nodes, those should go to the compute nodes in batch jobs.
+- Use all the CPUs of the compute nodes. Don't submit jobs that cannot run in parallel to other partitions than `xeon16`. In situations where parallelization cannot be achieved and `xeon16` does not suffice, contact the support.
 
 ## Table of Contents
 
-- Quickstart
-- Useful Linux Commands
-- Useful Slurm Commands
-- Useful EasyBuild Commands
+- [Quickstart](Welcome to Niflheim Quickstart)
+- [Useful Linux Commands](linux.md#Useful Linux Commands)
+- [Useful Slurm Commands](slurm.md#Useful Slurm Commands)
+- Software modules
 - More Resources

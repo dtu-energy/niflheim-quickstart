@@ -19,7 +19,3 @@ nav:
 plugins:
   - search
   
-# Extension for table of contents
-markdown_extensions:
-  - toc:
-      permalink: "#"

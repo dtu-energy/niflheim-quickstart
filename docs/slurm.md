@@ -1,4 +1,4 @@
-# Most Useful Slurm Commands
+# Useful Slurm Commands
 
 This page will introduce you to some of the most useful Slurm commands that you can use on the hpc resource. Slurm is a workload manager that allocates resources and schedules jobs on the cluster. You can use Slurm commands to submit, monitor, control, and manage your jobs.
 
@@ -6,21 +6,26 @@ This page will introduce you to some of the most useful Slurm commands that you 
 
 Here are some basic Slurm commands and their usage:
 
-- `sbatch`: This command submits a job script to the cluster. A job script is a file that contains the parameters and commands for your job. For example, `sbatch hello.sh` will submit the job script `hello.sh` to the cluster. You can also specify some parameters as options in the command line, such as `-N` for number of nodes, `-n` for number of tasks, `-c` for number of cores per task, `-t` for time limit, etc. For example, `sbatch -N 2 -n 4 -c 2 -t 10:00 hello.sh` will submit the job script `hello.sh` with 2 nodes, 4 tasks, 2 cores per task, and 10 minutes time limit.
+- `sbatch`: This command submits a job script to the cluster. A job script is a file that contains the parameters and commands for your job. For example, `sbatch hello.sh` will submit the job script `hello.sh` to the cluster. You can also specify some parameters as options in the command line, such as `-N` for number of nodes, `-n` for number of tasks, `-c` for number of cores per task, `-t` for time limit, etc. For example, `sbatch -N 2 -n 4 -c 2 -t 10:00 hello.sh` will submit the job script `hello.sh` with 2 nodes, 4 tasks, 2 cores per task, and 10 minutes time limit. These arguments can also be set with the `#SBATCH` instruction in the `hello.sh` script itself.
 
 - `squeue`: This command shows the status of the jobs in the cluster. For example, `squeue` will show all the jobs in the cluster with their job ID, partition, name, user, state, time, nodes, node list, etc. You can also use options to filter or format the output, such as `-u` for user name, `-p` for partition name, `-o` for output format, etc. For example, `squeue -u user` will show only the jobs submitted by user `user`, while `squeue -o "%i %j %T"` will show only the job ID, name, and state of each job.
 
 - `scancel`: This command cancels a job or a group of jobs in the cluster. For example, `scancel 123456` will cancel the job with ID 123456. You can also use options to specify criteria for cancelling jobs, such as `-u` for user name, `-p` for partition name, `-t` for job state, etc. For example, `scancel -u user -t PENDING` will cancel all the pending jobs submitted by user `user`.
 
-- `scontrol`: This command allows you to view or modify the configuration and status of the cluster and its components. For example, `scontrol show node node01` will show detailed information about node01, such as its state, CPU load, memory usage, features, etc. You can also use options to perform actions on the cluster and its components, such as `-o` for one-line output format, `-h` for help message, etc. For example, `scontrol update NodeName=node01 State=DOWN Reason=maintenance` will set node01 to down state with a reason of maintenance.
-
 - `sinfo`: This command shows the status of the partitions and nodes in the cluster. For example, `sinfo` will show all the partitions and nodes in the cluster with their name, size, state, time limit, nodes, node list, etc. You can also use options to filter or format the output, such as `-p` for partition name, `-N` for node name, `-o` for output format, etc. For example, `sinfo -p batch -N -o "%n %T %C"` will show only the node name, state, and CPU allocation of each node in the batch partition.
 
 - `srun`: This command runs a command or a program on a set of allocated nodes in the cluster. For example, `srun hostname` will run the hostname command on each allocated node and print the output. You can also use options to specify parameters for your job, such as `-N` for number of nodes, `-n` for number of tasks, `-c` for number of cores per task, `-t` for time limit, etc. For example, `srun -N 2 -n 4 -c 2 -t 10:00 python hello.py` will run the python script `hello.py` on 2 nodes with 4 tasks and 2 cores per task for 10 minutes.
 
-- `salloc`: This command allocates resources from the cluster for an interactive session. For example, `salloc -N 2 -n 4 -c 2 -t 10:00` will allocate 2 nodes with 4 tasks and 2 cores per task for 10 minutes and give you a shell prompt on one of the allocated nodes. You can then use `srun` or other commands to run programs on the allocated nodes.
+## Slurm helper scripts
 
-- `sinteractive`: This command is similar to `salloc`, but it also creates an interactive session on one of the allocated nodes with X11 forwarding enabled. This allows you to run graphical applications on the cluster and display them on your local machine. For example, `sinteractive -N 2 -n 4 -c 2 -t 10:00` will allocate 2 nodes with 4 tasks and 2 cores per task for 10 minutes and give you an interactive session on one of the allocated nodes. You can then use `srun` or other commands to run graphical programs on the allocated nodes and see them on your local machine.
+Just to highlight the highly useful Slurm tools written by the system administrator of Niflheim:
+
+- `showpartitions`: 
+
+- `showuserjobs`:
+
+- `pestat`:
+
 
 ## Advanced Slurm Commands
 
