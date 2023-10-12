@@ -11,7 +11,9 @@ theme:
 nav:
   - Home: index.md
   - Quickstart: quickstart.md
-  - Useful Slurm Commands: slurm.md
+  - Submit jobs: slurm.md
+  - Software Modules: modules.md
+  - File editing: editing-files.md
   - Useful Linux Commands: linux.md
   # - More Resources: resources.md
 
@@ -19,3 +21,6 @@ nav:
 plugins:
   - search
   
+markdown_extensions:
+  - toc:
+      permalink: "#"

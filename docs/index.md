@@ -17,10 +17,3 @@ Each compute node partition has a corresponding login node with the same CPU arc
 - Don't run real calculations on the login nodes, those should go to the compute nodes in batch jobs.
 - Use all the CPUs of the compute nodes. Don't submit jobs that cannot run in parallel to other partitions than `xeon16`. In situations where parallelization cannot be achieved and `xeon16` does not suffice, contact the support.
 
-## Table of Contents
-
-- [Quickstart](Welcome to Niflheim Quickstart)
-- [Useful Linux Commands](linux.md#Useful Linux Commands)
-- [Useful Slurm Commands](slurm.md#Useful Slurm Commands)
-- Software modules
-- More Resources
