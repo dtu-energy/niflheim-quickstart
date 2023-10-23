@@ -17,3 +17,6 @@ Each compute node partition has a corresponding login node with the same CPU arc
 - Don't run real calculations on the login nodes, those should go to the compute nodes in batch jobs.
 - Use all the CPUs of the compute nodes. Don't submit jobs that cannot run in parallel to other partitions than `xeon16`. In situations where parallelization cannot be achieved and `xeon16` does not suffice, contact the support.
 
+## Get started
+
+Go to [Quickstart](quickstart.md)
