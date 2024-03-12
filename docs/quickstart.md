@@ -16,7 +16,7 @@ To log in to Niflheim, open your SSH client and enter the following command:
 ssh username@surt.fysik.dtu.dk
 ```
 
-Replace `username` with your actual username and `surt` with the hostname of the login node you want to connect to (`thul`, `slid`, `sylg`, `svol` or `surt`). You will be prompted to enter your password. After you enter it, you should see a welcome message and a shell prompt.
+Replace `username` with your actual username and `surt` with the hostname of the login node you want to connect to (`thul`, `slid`, `sylg`, `svol`, `fjorm` or `surt`). You will be prompted to enter your password. After you enter it, you should see a welcome message and a shell prompt.
 
 ## Run programs on Niflheim
 
