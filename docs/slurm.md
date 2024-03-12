@@ -40,6 +40,8 @@ ams inputfile
 
 See also [how to edit files.](editing-files.md)
 
+If you feel it is too cumbersome to create submit files for `sbatch`, then [`myqueue`](https://myqueue.readthedocs.io/en/latest/) might be something for you.
+
 ## Basic Slurm Commands
 
 Here are some basic Slurm commands and their usage:
