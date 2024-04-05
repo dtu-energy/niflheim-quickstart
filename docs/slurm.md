@@ -11,8 +11,8 @@ Here is an example of a Slurm job script that runs a Python script called `hello
 ```bash
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=16
-#SBATCH --partition=xeon16
+#SBATCH --ntasks-per-node=24
+#SBATCH --partition=xeon24
 #SBATCH --time=0-00:10:00  # 10 minutes
 #SBATCH --job-name=hello
 #SBATCH --output=hello.out
