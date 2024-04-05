@@ -28,7 +28,7 @@ module use /home/modules/energy/modules/all
 module use /home/energy/modules/modules/all
 ```
 
-*Note* that after adding directories to the search path you can do `module avail` to see which modules were made available.
+*Note* that after adding directories to the search path you can do `module avail` to see which modules were made available. You can also do `module avail <SOFTWARE>`, where `<SOFTWARE>` is the specific program you are interested in.
 
 <!-- By default, the module search path includes some system-wide directories that contain the shared module files. However, you can also add your own directories that contain your custom or private module files. For example, `module use /home/user/mymodules` adds a directory named /home/user/mymodules to the module search path.  -->
 
