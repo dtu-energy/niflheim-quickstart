@@ -16,6 +16,7 @@ Here are some examples of common Linux commands and their usage:
 - `cd`: Change directory. For example, `cd /home/user` will change the current working directory to `/home/user`. Some useful shortcuts for this command are:
     - `cd ..`: This command moves up one level in the directory hierarchy. For example, if the current working directory is `/home/user/docs`, then `cd ..` will change it to `/home/user`.
     - `cd`: Move to the home directory of the current user.
+    - `cd -`: Move to the previous folder.
 
 - `cp`: Copy files or directories. For example, `cp hello.py /home/user/docs` will copy the file `hello.py` from the current working directory to the `/home/user/docs` directory.
 
