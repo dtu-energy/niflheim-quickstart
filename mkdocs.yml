@@ -13,6 +13,7 @@ nav:
   - Quickstart: quickstart.md
   - Submit jobs: slurm.md
   - Software Modules: modules.md
+  - Storage: storage.md
   - File editing: editing-files.md
   - Useful Linux Commands: linux.md
   # - More Resources: resources.md

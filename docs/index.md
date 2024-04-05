@@ -16,6 +16,8 @@ Each compute node partition has a corresponding login node with the same CPU arc
 
 - Don't run real calculations on the login nodes, those should go to the compute nodes in batch jobs.
 - Use all the CPUs of the compute nodes. Don't submit jobs that cannot run in parallel to other partitions than `xeon24`. In situations where parallelization cannot be achieved and `xeon24` does not suffice, contact the support. *NB* The partitions `xeon24`, `sm3090el8`, `a100` and `xeon32_4096` allow for jobs that don't use a full node.
+- If your calculations are doing a lot of read/write operations to the disk please take advantage of the [local node scratch disks](https://wiki.fysik.dtu.dk/Niflheim_users/Niflheim_Getting_Started/#using-compute-node-temporary-scratch-disk-space)
+- If you require a lot of space for a temporary project, you can ask to get access to `/home/scratch3` (`/home/scratch3` has no backup). See also [Storage](storage.md)
 
 ## Get started
 
